@@ -33,7 +33,7 @@ for string in buffe:
 		connect = sock.connect((Target,Port))
 
 		# Recibiendo mensaje del servidor remoto
-		#print(sock.recv(1024))
+		sock.recv(1024)
 
 		# Imprimiendo bytes enviados
 		log.info("Enviando %s bytes" % len(string))
